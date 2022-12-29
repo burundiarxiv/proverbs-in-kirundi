@@ -17,7 +17,7 @@ proverbs.each do |proverb|
   next unless guesses.length.positive?
 
   guesses.each do |guess|
-    puts "#{count} #{guess} #{proverb}"
+    # puts "#{coeaneaneaunt} #{guess} #{proverb}"
     count += 1
     if result.key?(guess)
       result[guess] << proverb
@@ -27,13 +27,6 @@ proverbs.each do |proverb|
   end
 end
 
-binding.pry
+puts result
 
-
-  # puts count
-  # if one of the words is made of 5 letters print the proverb
-  # if words.any? { |word| word.length == 5 }
-  #   puts "#{count} #{proverb}"
-  #   count += 1
-  # end
-  # p words
+# binding.pry
